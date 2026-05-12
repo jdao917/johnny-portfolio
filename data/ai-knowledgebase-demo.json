@@ -1,0 +1,42 @@
+﻿{
+  "title": "AI Knowledge Base Assistant Demo",
+  "summary": "Safe cached demo showing how an internal knowledge base assistant can answer questions from sanitized documentation and return source links.",
+  "steps": [
+    "Loads sanitized sample documentation",
+    "Breaks docs into searchable knowledge chunks",
+    "Matches user questions to the most relevant source content",
+    "Returns a clear answer with recommended next documents",
+    "Displays fake source links like a real AI knowledge base answer",
+    "Keeps private company data, internal contacts, and proprietary content out of the public demo"
+  ],
+  "logs": [
+    "Starting AI knowledge base assistant demo...",
+    "Loading sample docs: Dev Setup, Coding Template, Support Contacts, Reading Path...",
+    "Chunking sample documentation...",
+    "Indexing searchable content...",
+    "Received sample question: How do I set up my dev environment?",
+    "Retrieving best matching knowledge chunks...",
+    "Matched source: Dev Environment Setup Guide",
+    "Matched related source: Coding Template",
+    "Generating safe answer from approved sample docs...",
+    "Returning answer with fake source links and suggested next documents...",
+    "Demo complete."
+  ],
+  "metrics": [
+    { "value": "4", "label": "Sample docs" },
+    { "value": "12", "label": "Knowledge chunks" },
+    { "value": "4", "label": "Source links" }
+  ],
+  "table": [
+    { "Question": "How do I set up my dev environment?", "AnswerType": "Setup guide", "Source": "Dev Environment Setup Guide", "NextDoc": "Coding Template" },
+    { "Question": "What coding template should I use?", "AnswerType": "Template recommendation", "Source": "Coding Template", "NextDoc": "Recommended Reading Path" },
+    { "Question": "Who do I contact for issues?", "AnswerType": "Support routing", "Source": "Support Contacts Guide", "NextDoc": "Escalation Workflow" }
+  ],
+  "links": [
+    { "label": "Dev Environment Setup Guide", "href": "../docs/dev-environment-setup.html", "description": "Basic local setup, Python environment, editor setup, and validation steps." },
+    { "label": "Coding Template", "href": "../docs/coding-template.html", "description": "Sample structure for clean automation scripts and repeatable workflows." },
+    { "label": "Support Contacts Guide", "href": "../docs/support-contacts.html", "description": "Mock routing guide for setup issues, script errors, and escalation paths." },
+    { "label": "Recommended Reading Path", "href": "../docs/recommended-reading.html", "description": "Suggested order for reading setup, coding, PR, and support documentation." }
+  ],
+  "architecture": "Flow: sample docs → chunking → retrieval → grounded answer → source links → recommended docs → safe response."
+}

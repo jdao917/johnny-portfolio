@@ -1,0 +1,56 @@
+﻿{
+    "title":  "StockScanner Challenger Model Demo",
+    "summary":  "Safe cached demo showing how a current scoring model can be compared against a challenger model.",
+    "logs":  [
+                 "Starting StockScanner challenger demo...",
+                 "Loading sample market watchlist...",
+                 "Calculating current model score...",
+                 "Calculating challenger model score...",
+                 "Comparing score movement and confidence...",
+                 "Ranking watchlist candidates...",
+                 "Demo complete."
+             ],
+    "metrics":  [
+                    {
+                        "label":  "Symbols scored",
+                        "value":  "25"
+                    },
+                    {
+                        "label":  "Top candidates",
+                        "value":  "5"
+                    },
+                    {
+                        "label":  "Model delta",
+                        "value":  "+8%"
+                    }
+                ],
+    "table":  [
+                  {
+                      "Symbol":  "DEMO1",
+                      "CurrentScore":  "72",
+                      "ChallengerScore":  "81",
+                      "Action":  "Watch"
+                  },
+                  {
+                      "Symbol":  "DEMO2",
+                      "CurrentScore":  "68",
+                      "ChallengerScore":  "70",
+                      "Action":  "Hold"
+                  },
+                  {
+                      "Symbol":  "DEMO3",
+                      "CurrentScore":  "75",
+                      "ChallengerScore":  "63",
+                      "Action":  "Review"
+                  }
+              ],
+    "architecture":  "Flow: market data → feature scoring → challenger comparison → ranked watchlist → CSV/report output.",
+    "steps":  [
+                  "Calls a market data API to pull stock data",
+                  "Cleans and analyzes the data for scoring signals",
+                  "Scores each stock using the current model",
+                  "Builds and tests a challenger model with adjusted logic",
+                  "Promotes the challenger only if it beats the original model by a defined threshold",
+                  "Outputs a ranked watchlist and report for review"
+              ]
+}

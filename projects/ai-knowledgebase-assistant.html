@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Knowledge Base Assistant | Johnny Dao</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body data-project-id="ai-kb">
+  <main class="page-shell">
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+    <section class="project-detail">
+      <div class="pill">Safe AI / RAG Demo</div>
+      <h1>AI Knowledge Base Assistant</h1>
+      <p class="project-lead">
+        A sanitized proof-of-concept showing how an internal documentation assistant can answer questions about
+        dev environment setup, coding templates, support contacts, recommended reading, and workflow guidance.
+      </p>
+
+      <div class="security-notice">
+        <strong>Security-first design:</strong> This public demo uses mock documentation only. It does not expose employer content,
+        private systems, real contacts, internal documents, secrets, account IDs, logs, or proprietary implementation details.
+      </div>
+
+      <h2>What this demo shows</h2>
+      <ul>
+        <li>How sample documentation can be organized into searchable knowledge chunks</li>
+        <li>How users can ask practical onboarding and workflow questions</li>
+        <li>How the assistant can return clear answers with suggested next documents</li>
+        <li>How a knowledge base assistant can be designed safely for internal operations support</li>
+      </ul>
+      <h2>Example Questions</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Dev Setup</h3>
+          <p>“How do I set up my dev environment?”</p>
+        </div>
+        <div class="card">
+          <h3>Coding Template</h3>
+          <p>“What template should I use for a new automation script?”</p>
+        </div>
+        <div class="card">
+          <h3>Support Routing</h3>
+          <p>“Who should I contact if I run into an issue?”</p>
+        </div>
+        <div class="card">
+          <h3>Recommended Reading</h3>
+          <p>“What docs should I read first before starting?”</p>
+        </div>
+      </div>
+
+      <p style="margin-top: 22px;"><button class="btn primary" type="button" data-demo-file="../data/ai-knowledgebase-demo.json">Run Safe Demo</button></p><p class="muted">After the demo runs, generated source documents and recommended links will appear in the output below.</p>
+
+      <div id="demo-output" class="output hidden">
+        <div class="output-header">
+          <h3 id="demo-title">Demo Output</h3>
+          <span class="status">cached safe mode</span>
+        </div>
+        <p id="demo-summary"></p>
+        <div id="demo-steps" class="demo-steps"></div>
+        <pre id="demo-log"></pre>
+        <div id="demo-metrics" class="metrics"></div>
+        <div id="demo-table"></div><div id="demo-links" class="demo-links"></div>
+        <p id="demo-architecture" class="architecture"></p>
+      </div>
+
+      <div class="project-footer-actions">
+        <a href="../index.html#projects" class="btn primary">← Back to Projects</a>
+        <a href="../index.html" class="btn">Return to Homepage</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+
+

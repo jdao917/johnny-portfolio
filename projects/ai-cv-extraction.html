@@ -1,0 +1,96 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI CV Extraction Pipeline | Johnny Dao</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body data-project-id="ai-cv">
+  <main class="page-shell">
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+    <section class="project-detail">
+      <div class="pill">Safe Cached Demo</div>
+      <h1>AI CV Extraction Pipeline</h1>
+      <p class="project-lead">A sanitized AI workflow demo showing document extraction, chunking, section detection, and structured JSON output.</p>
+
+      <div class="security-notice">
+        <strong>Security-first design:</strong> This public demo uses cached, sanitized sample data only.
+        Production credentials, account IDs, internal logs, customer data, and security-sensitive implementation details are intentionally excluded.
+      </div>
+
+      <h2>What this demo shows</h2>
+      <ul>
+          <li>Reads sample CV text</li>
+          <li>Chunks content into sections</li>
+          <li>Extracts structured fields</li>
+          <li>Returns safe JSON-style output</li>
+      </ul>
+
+      <button class="btn primary" type="button" data-demo-file="../data/ai-cv-extraction-demo.json">Run Safe Demo</button>
+
+      <div id="demo-output" class="output hidden">
+        <div class="output-header">
+          <h3 id="demo-title">Demo Output</h3>
+          <span class="status">cached safe mode</span>
+        </div>
+        <p id="demo-summary"></p>
+        <div id="demo-steps" class="demo-steps"></div>
+        <pre id="demo-log"></pre>
+        <div id="demo-metrics" class="metrics"></div>
+        <div id="demo-table"></div>
+        <p id="demo-architecture" class="architecture"></p>
+      </div>
+
+      <p style="margin-top: 24px;">
+        <a href="../index.html#projects" class="btn">← Back to Projects</a>
+      </p>
+    </section>
+  </main>
+
+    <!-- PORTFOLIO_ASSISTANT_START -->
+  <div id="portfolio-assistant" class="assistant-widget" aria-live="polite">
+    <button id="assistant-launcher" class="assistant-launcher" type="button" aria-expanded="false" aria-controls="assistant-panel">
+      <span class="assistant-launcher-icon">?</span>
+      <span>Portfolio Assistant</span>
+    </button>
+
+    <section id="assistant-panel" class="assistant-panel hidden" aria-label="Portfolio assistant">
+      <div class="assistant-header">
+        <div>
+          <strong>Portfolio Assistant</strong>
+          <span>Ask about Johnny's skills and projects</span>
+        </div>
+        <button id="assistant-close" class="assistant-close" type="button" aria-label="Close assistant">×</button>
+      </div>
+
+      <div id="assistant-messages" class="assistant-messages">
+        <div class="assistant-message bot">
+          Hi, I’m Johnny’s portfolio assistant. Choose a question below or type one in.
+        </div>
+      </div>
+
+      <div class="assistant-quick-actions">
+        <button type="button" data-assistant-question="path">Recommended path</button>
+        <button type="button" data-assistant-question="who">Who is Johnny?</button>
+        <button type="button" data-assistant-question="site">What does this site do?</button>
+        <button type="button" data-assistant-question="projects">Show projects</button>
+        <button type="button" data-assistant-question="aws">AWS automation</button>
+        <button type="button" data-assistant-question="ai">AI / LLM work</button><button type="button" data-assistant-question="kb">Knowledge base</button>
+        <button type="button" data-assistant-question="cicd">CI/CD simulator</button>
+        <button type="button" data-assistant-question="contact">Contact</button>
+      </div>
+
+      <form id="assistant-form" class="assistant-form">
+        <input id="assistant-input" type="text" placeholder="Ask about Johnny, projects, CI/CD..." autocomplete="off" />
+        <button class="btn primary" type="submit">Ask</button>
+      </form>
+    </section>
+  </div>
+  <!-- PORTFOLIO_ASSISTANT_END -->
+  <script src="../script.js"></script>
+</body>
+</html>
+
+

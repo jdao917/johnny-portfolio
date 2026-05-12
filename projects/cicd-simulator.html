@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CI/CD Simulator | Johnny Dao</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body data-project-id="cicd">
+  <main class="page-shell">
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+    <section class="project-detail">
+      <div class="pill">Interactive Front-End Demo</div>
+      <h1>CI/CD Simulator</h1>
+      <p class="project-lead">
+        A safe front-end simulation showing how a pull request, merge, GitHub Actions workflow,
+        and GitHub Pages deployment process works.
+      </p>
+
+      <div class="security-notice">
+        <strong>Security-first design:</strong> This demo does not commit code, trigger real deployments,
+        or touch paid infrastructure.
+      </div>
+
+      <div class="card simulator-card">
+        <p class="muted">
+          Pick an animal, then launch the fake pull request → merge → deploy workflow.
+        </p>
+
+        <div class="sim-form">
+          <label for="visitor-name">Choose animal to deploy</label>
+          <select id="visitor-name">
+            <option value="fox">Fox</option>
+            <option value="owl">Owl</option>
+            <option value="otter">Otter</option>
+            <option value="panda">Panda</option>
+          </select>
+          <button id="run-cicd-sim" class="btn primary" type="button">Launch CI/CD Simulation</button>
+        </div>
+
+        <div id="sim-backdrop" class="sim-backdrop hidden"></div>
+
+        <div id="cicd-sim-output" class="sim-output hidden" role="dialog" aria-modal="true" aria-label="CI/CD simulation result">
+          <button id="close-cicd-sim" class="modal-close" type="button">×</button>
+
+          <h3>Simulated Pull Request</h3>
+          <p class="muted">
+            A fake code change has been opened as a pull request. Review it, then merge to trigger the deployment pipeline.
+          </p>
+
+          <pre id="sim-diff"></pre>
+
+          <button id="merge-pr-btn" class="btn primary" type="button">Approve & Merge Pull Request</button>
+
+          <h3>Fake GitHub Actions Pipeline</h3>
+          <div id="sim-pipeline" class="sim-pipeline"></div>
+
+          <div class="sim-preview">
+            <div id="sim-animal" class="sim-animal hidden">🦊</div>
+            <div id="sim-animal-label" class="sim-animal-label">Waiting for pull request merge...</div>
+            <div><strong>Preview:</strong> <span id="sim-preview-text">Deployment has not started yet</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- CICD_BOTTOM_NAV_START -->
+      <div class="project-footer-actions">
+        <a href="../index.html#projects" class="btn primary">← Back to Projects</a>
+        <a href="../index.html" class="btn">Return to Homepage</a>
+      </div>
+      <!-- CICD_BOTTOM_NAV_END -->
+
+    </section>
+  </main>
+
+    <!-- PORTFOLIO_ASSISTANT_START -->
+  <div id="portfolio-assistant" class="assistant-widget" aria-live="polite">
+    <button id="assistant-launcher" class="assistant-launcher" type="button" aria-expanded="false" aria-controls="assistant-panel">
+      <span class="assistant-launcher-icon">?</span>
+      <span>Portfolio Assistant</span>
+    </button>
+
+    <section id="assistant-panel" class="assistant-panel hidden" aria-label="Portfolio assistant">
+      <div class="assistant-header">
+        <div>
+          <strong>Portfolio Assistant</strong>
+          <span>Ask about Johnny's skills and projects</span>
+        </div>
+        <button id="assistant-close" class="assistant-close" type="button" aria-label="Close assistant">×</button>
+      </div>
+
+      <div id="assistant-messages" class="assistant-messages">
+        <div class="assistant-message bot">
+          Hi, I’m Johnny’s portfolio assistant. Choose a question below or type one in.
+        </div>
+      </div>
+
+      <div class="assistant-quick-actions">
+        <button type="button" data-assistant-question="path">Recommended path</button>
+        <button type="button" data-assistant-question="who">Who is Johnny?</button>
+        <button type="button" data-assistant-question="site">What does this site do?</button>
+        <button type="button" data-assistant-question="projects">Show projects</button>
+        <button type="button" data-assistant-question="aws">AWS automation</button>
+        <button type="button" data-assistant-question="ai">AI / LLM work</button><button type="button" data-assistant-question="kb">Knowledge base</button>
+        <button type="button" data-assistant-question="cicd">CI/CD simulator</button>
+        <button type="button" data-assistant-question="contact">Contact</button>
+      </div>
+
+      <form id="assistant-form" class="assistant-form">
+        <input id="assistant-input" type="text" placeholder="Ask about Johnny, projects, CI/CD..." autocomplete="off" />
+        <button class="btn primary" type="submit">Ask</button>
+      </form>
+    </section>
+  </div>
+  <!-- PORTFOLIO_ASSISTANT_END -->
+  <script src="../script.js"></script>
+</body>
+</html>
+
+
+

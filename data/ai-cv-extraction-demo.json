@@ -1,0 +1,52 @@
+﻿{
+    "title":  "AI CV Extraction Pipeline Demo",
+    "summary":  "Safe cached demo showing how a CV/resume can be chunked, classified, and converted into structured JSON.",
+    "logs":  [
+                 "Starting AI CV extraction demo...",
+                 "Loading sample CV text...",
+                 "Detecting section headers using spacing/capitalization/divider patterns...",
+                 "Sending enriched chunks to orchestrator LLM...",
+                 "Extracting structured output with smaller model...",
+                 "Validating JSON schema...",
+                 "Demo complete."
+             ],
+    "metrics":  [
+                    {
+                        "label":  "Sections detected",
+                        "value":  "7"
+                    },
+                    {
+                        "label":  "Fields extracted",
+                        "value":  "23"
+                    },
+                    {
+                        "label":  "Fallback calls",
+                        "value":  "1"
+                    }
+                ],
+    "table":  [
+                  {
+                      "Section":  "Education",
+                      "Extracted":  "Yes",
+                      "Confidence":  "High"
+                  },
+                  {
+                      "Section":  "Publications",
+                      "Extracted":  "Yes",
+                      "Confidence":  "Medium"
+                  },
+                  {
+                      "Section":  "Appointments",
+                      "Extracted":  "Yes",
+                      "Confidence":  "High"
+                  }
+              ],
+    "architecture":  "Flow: PDF/DOCX upload → text extraction → visual chunking → LLM section detection → structured JSON → validation.",
+    "steps":  [
+                  "Accepts a PDF/DOCX style CV document",
+                  "Extracts text and detects section boundaries using visual clues",
+                  "Chunks the document into safer smaller sections",
+                  "Uses an LLM workflow to classify sections and extract structured data",
+                  "Validates the final output as clean JSON for downstream systems"
+              ]
+}

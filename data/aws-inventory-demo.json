@@ -1,0 +1,57 @@
+﻿{
+    "title":  "AWS Inventory Report Demo",
+    "summary":  "Safe cached demo showing a multi-account inventory workflow for AWS resources.",
+    "logs":  [
+                 "Starting AWS inventory scan in safe demo mode...",
+                 "Loading sample AWS account list...",
+                 "Scanning EC2, S3, Lambda, IAM, and CloudFormation sample data...",
+                 "Normalizing resource data...",
+                 "Building account summary...",
+                 "Exporting inventory report...",
+                 "Demo complete."
+             ],
+    "metrics":  [
+                    {
+                        "label":  "Accounts scanned",
+                        "value":  "4"
+                    },
+                    {
+                        "label":  "Resources found",
+                        "value":  "128"
+                    },
+                    {
+                        "label":  "CSV reports",
+                        "value":  "3"
+                    }
+                ],
+    "table":  [
+                  {
+                      "Account":  "research-sandbox",
+                      "EC2":  "8",
+                      "S3":  "14",
+                      "Lambda":  "5"
+                  },
+                  {
+                      "Account":  "research-nonprod",
+                      "EC2":  "18",
+                      "S3":  "27",
+                      "Lambda":  "11"
+                  },
+                  {
+                      "Account":  "demo-prod",
+                      "EC2":  "31",
+                      "S3":  "42",
+                      "Lambda":  "16"
+                  }
+              ],
+    "architecture":  "Flow: AWS SSO profiles → boto3 service clients → normalized inventory → CSV/dashboard output.",
+    "steps":  [
+                  "Loops through multiple AWS account profiles",
+                  "Collects resource inventory across services such as EC2, S3, Lambda, IAM, and CloudFormation",
+                  "Normalizes the data into a clean reporting format",
+                  "Creates account level summaries and CSV style outputs",
+                  "Helps teams understand what exists across cloud environments"
+              ]
+}
+
+

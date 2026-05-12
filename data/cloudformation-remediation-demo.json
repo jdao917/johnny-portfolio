@@ -1,0 +1,52 @@
+﻿{
+    "title":  "CloudFormation Remediation Demo",
+    "summary":  "Safe cached demo showing dry-run remediation for CloudFormation termination protection and SNS notifications.",
+    "logs":  [
+                 "Starting CloudFormation remediation demo...",
+                 "Loading sanitized stack inventory...",
+                 "Checking termination protection status...",
+                 "Checking SNS notification ARNs...",
+                 "Preparing dry-run remediation plan...",
+                 "No live AWS changes made in public demo mode.",
+                 "Demo complete."
+             ],
+    "metrics":  [
+                    {
+                        "label":  "Stacks checked",
+                        "value":  "81"
+                    },
+                    {
+                        "label":  "Would update",
+                        "value":  "34"
+                    },
+                    {
+                        "label":  "Already compliant",
+                        "value":  "47"
+                    }
+                ],
+    "table":  [
+                  {
+                      "StackName":  "demo-network-stack",
+                      "TerminationProtection":  "Enabled",
+                      "SNS":  "Present"
+                  },
+                  {
+                      "StackName":  "demo-app-stack",
+                      "TerminationProtection":  "Missing",
+                      "SNS":  "Missing"
+                  },
+                  {
+                      "StackName":  "demo-data-stack",
+                      "TerminationProtection":  "Enabled",
+                      "SNS":  "Missing"
+                  }
+              ],
+    "architecture":  "Flow: AWS profiles → CloudFormation stack scan → dry-run decision logic → remediation CSV → controlled apply mode.",
+    "steps":  [
+                  "Scans CloudFormation stacks across AWS accounts",
+                  "Checks whether termination protection is enabled",
+                  "Checks whether SNS stack event notifications are configured",
+                  "Builds a dry run remediation plan before making changes",
+                  "Supports controlled apply mode after review and approval"
+              ]
+}
