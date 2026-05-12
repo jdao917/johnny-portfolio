@@ -908,3 +908,131 @@ h2 {
     font-size: 17px;
   }
 }
+
+/* Compact professional homepage pass */
+.hero {
+  padding-top: 38px;
+  padding-bottom: 28px;
+}
+
+.hero,
+.section,
+.page-shell {
+  max-width: 980px;
+}
+
+.pill {
+  padding: 6px 11px;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  font-size: clamp(24px, 2.6vw, 30px);
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.subtitle,
+.project-lead {
+  font-size: 17px;
+  line-height: 1.45;
+  max-width: 760px;
+}
+
+.hero-callout,
+.demo-callout,
+.sim-callout {
+  margin: 16px 0 14px;
+  padding: 12px 14px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.hero-actions {
+  margin-top: 22px;
+}
+
+.btn,
+.back-button {
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 11px;
+}
+
+.section {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.card,
+.project-card,
+.output,
+.project-detail {
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.about-card p {
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.about-card p:first-child {
+  font-size: 16.5px;
+}
+
+.grid {
+  gap: 14px;
+}
+
+.grid.three {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.assistant-launcher {
+  padding: 11px 14px;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  .hero,
+  .section,
+  .page-shell {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 34px;
+    padding-bottom: 24px;
+  }
+
+  h1 {
+    font-size: clamp(38px, 12vw, 52px);
+  }
+
+  .subtitle,
+  .project-lead {
+    font-size: 16px;
+  }
+
+  .section {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
