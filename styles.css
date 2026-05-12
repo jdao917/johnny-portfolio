@@ -1418,3 +1418,201 @@ h2 {
     font-size: 13px;
   }
 }
+
+/* Global smaller scale v2: reduce all pages at normal 100% browser zoom */
+@media (min-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
+  .hero,
+  .section,
+  .page-shell {
+    max-width: 680px;
+  }
+
+  .hero {
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+
+  .page-shell {
+    padding-top: 18px;
+    padding-bottom: 28px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 2.6vw, 34px);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+  }
+
+  h2 {
+    font-size: clamp(18px, 1.7vw, 22px);
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p,
+  li,
+  .muted,
+  .project-card p,
+  .card p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .subtitle,
+  .project-lead {
+    font-size: 13px;
+    line-height: 1.4;
+    max-width: 560px;
+  }
+
+  .pill {
+    font-size: 11px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+  }
+
+  .hero-callout,
+  .demo-callout,
+  .sim-callout,
+  .security-notice {
+    font-size: 12.5px;
+    padding: 8px 10px;
+    margin: 10px 0 9px;
+    border-radius: 12px;
+  }
+
+  .hero-actions {
+    margin-top: 12px;
+    gap: 8px;
+  }
+
+  .btn,
+  .back-button {
+    padding: 7px 10px;
+    font-size: 11.5px;
+    border-radius: 9px;
+  }
+
+  .section {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .card,
+  .project-card,
+  .output,
+  .project-detail {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .project-detail {
+    margin-top: 16px;
+  }
+
+  .project-card::before {
+    font-size: 9.5px;
+    padding: 3px 7px;
+    margin-bottom: 8px;
+  }
+
+  .about-card p {
+    font-size: 12.75px;
+    line-height: 1.45;
+  }
+
+  .about-card p:first-child {
+    font-size: 13.5px;
+  }
+
+  .grid {
+    gap: 9px;
+  }
+
+  .grid.two,
+  .grid.three {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+
+  ul,
+  ol {
+    padding-left: 18px;
+  }
+
+  pre {
+    font-size: 11px;
+    padding: 10px;
+    min-height: 70px;
+  }
+
+  table {
+    font-size: 11.5px;
+  }
+
+  th,
+  td {
+    padding: 7px;
+  }
+
+  .metrics {
+    gap: 9px;
+  }
+
+  .metric {
+    padding: 9px;
+  }
+
+  .metric strong {
+    font-size: 17px;
+  }
+
+  .demo-steps {
+    padding: 10px;
+  }
+
+  .doc-link-card {
+    padding: 10px;
+  }
+
+  .sim-output {
+    width: min(680px, calc(100vw - 32px));
+    padding: 16px;
+  }
+
+  .sim-step {
+    padding: 9px 10px;
+  }
+
+  .sim-animal {
+    font-size: 48px;
+  }
+
+  .assistant-launcher {
+    padding: 8px 11px;
+    font-size: 11.5px;
+  }
+
+  .assistant-panel {
+    width: min(330px, calc(100vw - 32px));
+  }
+
+  .assistant-message {
+    font-size: 12px;
+  }
+
+  .assistant-quick-actions button {
+    font-size: 11.5px;
+    padding: 7px 9px;
+  }
+
+  .assistant-form input {
+    font-size: 12px;
+  }
+}
