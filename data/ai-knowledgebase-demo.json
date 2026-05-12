@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "AI Knowledge Base Assistant Demo",
   "summary": "Safe cached demo showing how an internal knowledge base assistant can answer questions from sanitized documentation and return source links.",
   "steps": [

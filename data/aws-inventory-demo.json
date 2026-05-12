@@ -1,4 +1,4 @@
-﻿{
+{
     "title":  "AWS Inventory Report Demo",
     "summary":  "Safe cached demo showing a multi-account inventory workflow for AWS resources.",
     "logs":  [

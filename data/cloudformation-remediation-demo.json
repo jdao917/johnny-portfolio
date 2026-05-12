@@ -1,4 +1,4 @@
-﻿{
+{
     "title":  "CloudFormation Remediation Demo",
     "summary":  "Safe cached demo showing dry-run remediation for CloudFormation termination protection and SNS notifications.",
     "logs":  [

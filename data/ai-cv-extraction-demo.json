@@ -1,4 +1,4 @@
-﻿{
+{
     "title":  "AI CV Extraction Pipeline Demo",
     "summary":  "Safe cached demo showing how a CV/resume can be chunked, classified, and converted into structured JSON.",
     "logs":  [
