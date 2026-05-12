@@ -1616,3 +1616,78 @@ h2 {
     font-size: 12px;
   }
 }
+
+/* Compact CI/CD simulator modal so desktop view avoids internal scrolling */
+@media (min-width: 768px) {
+  .sim-output {
+    width: min(860px, calc(100vw - 40px));
+    max-height: calc(100vh - 40px);
+    padding: 14px;
+  }
+
+  .sim-output h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .sim-output p {
+    font-size: 12.5px;
+    line-height: 1.35;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .sim-output pre {
+    min-height: 54px;
+    max-height: 82px;
+    padding: 10px;
+    font-size: 11px;
+    margin: 8px 0 10px;
+  }
+
+  #merge-pr-btn {
+    margin: 2px 0 12px;
+    padding: 7px 10px;
+    font-size: 11.5px;
+  }
+
+  .sim-pipeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+    margin: 8px 0 12px;
+  }
+
+  .sim-step {
+    padding: 7px 9px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .sim-preview {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    padding: 10px 12px;
+    margin-top: 8px;
+  }
+
+  .sim-animal {
+    font-size: 38px;
+    margin-bottom: 0;
+  }
+
+  .sim-animal-label {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+}
