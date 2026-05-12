@@ -1130,3 +1130,125 @@ h3 {
     max-width: 860px;
   }
 }
+
+/* Final 100% zoom scale correction */
+.hero,
+.section,
+.page-shell {
+  max-width: 780px;
+}
+
+h1 {
+  font-size: clamp(32px, 3.4vw, 44px);
+}
+
+h2 {
+  font-size: clamp(21px, 2vw, 25px);
+}
+
+.subtitle,
+.project-lead {
+  font-size: 14.5px;
+  max-width: 660px;
+}
+
+.hero {
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+
+.section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card,
+.project-card,
+.output,
+.project-detail {
+  padding: 14px;
+}
+
+.hero-callout,
+.demo-callout,
+.sim-callout {
+  font-size: 13.5px;
+  padding: 10px 12px;
+}
+
+.about-card p {
+  font-size: 14px;
+}
+
+.about-card p:first-child {
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  .hero,
+  .section,
+  .page-shell {
+    max-width: 780px;
+  }
+}
+
+/* Final 100% zoom scale correction */
+.hero,
+.section,
+.page-shell {
+  max-width: 780px;
+}
+
+h1 {
+  font-size: clamp(32px, 3.4vw, 44px);
+}
+
+h2 {
+  font-size: clamp(21px, 2vw, 25px);
+}
+
+.subtitle,
+.project-lead {
+  font-size: 14.5px;
+  max-width: 660px;
+}
+
+.hero {
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+
+.section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card,
+.project-card,
+.output,
+.project-detail {
+  padding: 14px;
+}
+
+.hero-callout,
+.demo-callout,
+.sim-callout {
+  font-size: 13.5px;
+  padding: 10px 12px;
+}
+
+.about-card p {
+  font-size: 14px;
+}
+
+.about-card p:first-child {
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  .hero,
+  .section,
+  .page-shell {
+    max-width: 780px;
+  }
+}
