@@ -17,3 +17,17 @@ The public demos use sanitized sample data and cached outputs. No real AWS infra
 ## CI/CD flow
 
 Code push -> GitHub Actions validation -> GitHub Pages deployment
+
+## Development Workflow
+
+This portfolio uses a simple production-style workflow:
+
+1. Create a feature branch from `main`.
+2. Make changes locally.
+3. Run `python scripts/validate_site.py`.
+4. Push the branch to GitHub.
+5. Open a pull request into `main`.
+6. Let GitHub Actions validate the site.
+7. Merge the pull request after validation passes.
+
+The `main` branch represents the live GitHub Pages site.
