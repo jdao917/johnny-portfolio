@@ -1252,3 +1252,169 @@ h2 {
     max-width: 780px;
   }
 }
+
+/* Global compact scale: make 100% browser zoom feel closer to the old 80% view */
+@media (min-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero,
+  .section,
+  .page-shell {
+    max-width: 740px;
+  }
+
+  .hero {
+    padding-top: 22px;
+    padding-bottom: 14px;
+  }
+
+  .page-shell {
+    padding-top: 22px;
+    padding-bottom: 36px;
+  }
+
+  h1 {
+    font-size: clamp(30px, 3vw, 40px);
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: clamp(20px, 1.8vw, 24px);
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .subtitle,
+  .project-lead {
+    font-size: 13.5px;
+    line-height: 1.42;
+    max-width: 620px;
+  }
+
+  .pill {
+    font-size: 12px;
+    padding: 5px 9px;
+    margin-bottom: 10px;
+  }
+
+  .hero-callout,
+  .demo-callout,
+  .sim-callout,
+  .security-notice {
+    font-size: 13px;
+    padding: 9px 11px;
+    margin: 12px 0 10px;
+    border-radius: 13px;
+  }
+
+  .hero-actions {
+    margin-top: 14px;
+    gap: 9px;
+  }
+
+  .btn,
+  .back-button {
+    padding: 8px 11px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .section {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .card,
+  .project-card,
+  .output,
+  .project-detail {
+    padding: 13px;
+    border-radius: 15px;
+  }
+
+  .project-card::before {
+    font-size: 10.5px;
+    padding: 4px 8px;
+    margin-bottom: 9px;
+  }
+
+  .about-card p {
+    font-size: 13.25px;
+    line-height: 1.48;
+  }
+
+  .about-card p:first-child {
+    font-size: 14px;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+
+  .grid.two,
+  .grid.three {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+
+  pre {
+    font-size: 12px;
+    padding: 12px;
+    min-height: 90px;
+  }
+
+  table {
+    font-size: 12.5px;
+  }
+
+  th,
+  td {
+    padding: 9px;
+  }
+
+  .metric {
+    padding: 11px;
+  }
+
+  .metric strong {
+    font-size: 20px;
+  }
+
+  .demo-steps {
+    padding: 12px;
+  }
+
+  .doc-link-card {
+    padding: 11px;
+  }
+
+  .sim-output {
+    width: min(760px, calc(100vw - 32px));
+    padding: 18px;
+  }
+
+  .sim-animal {
+    font-size: 56px;
+  }
+
+  .assistant-launcher {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .assistant-panel {
+    width: min(350px, calc(100vw - 32px));
+  }
+
+  .assistant-message {
+    font-size: 13px;
+  }
+
+  .assistant-form input {
+    font-size: 13px;
+  }
+}
