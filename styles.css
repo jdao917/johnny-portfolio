@@ -1036,3 +1036,97 @@ h3 {
     padding-bottom: 18px;
   }
 }
+
+/* Normalize live homepage scale for 100% browser zoom */
+.hero,
+.section,
+.page-shell {
+  max-width: 860px;
+}
+
+.hero {
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+
+h1 {
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1;
+}
+
+h2 {
+  font-size: clamp(22px, 2.3vw, 28px);
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.subtitle,
+.project-lead {
+  font-size: 15.5px;
+  line-height: 1.42;
+  max-width: 720px;
+}
+
+.pill {
+  font-size: 13px;
+  padding: 5px 10px;
+  margin-bottom: 12px;
+}
+
+.hero-callout,
+.demo-callout,
+.sim-callout {
+  font-size: 14px;
+  padding: 11px 13px;
+  margin: 14px 0 12px;
+}
+
+.hero-actions {
+  margin-top: 18px;
+}
+
+.btn,
+.back-button {
+  padding: 9px 13px;
+  font-size: 13px;
+}
+
+.section {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.card,
+.project-card,
+.output,
+.project-detail {
+  padding: 16px;
+}
+
+.about-card p {
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.about-card p:first-child {
+  font-size: 15.5px;
+}
+
+.grid {
+  gap: 12px;
+}
+
+.assistant-launcher {
+  padding: 10px 13px;
+  font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+  .hero,
+  .section,
+  .page-shell {
+    max-width: 860px;
+  }
+}
