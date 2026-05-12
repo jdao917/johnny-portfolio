@@ -841,3 +841,70 @@ footer {
     box-shadow: 0 0 0 0 rgba(110,168,254,0);
   }
 }
+
+/* Homepage layout tightening */
+.hero {
+  padding-top: 56px;
+  padding-bottom: 38px;
+}
+
+h1 {
+  font-size: clamp(42px, 6.5vw, 72px);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(26px, 3vw, 34px);
+}
+
+.subtitle,
+.project-lead {
+  font-size: 18px;
+  max-width: 820px;
+}
+
+.section {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.card,
+.project-card,
+.output,
+.project-detail {
+  padding: 20px;
+}
+
+.hero-callout,
+.demo-callout,
+.sim-callout {
+  padding: 14px 16px;
+}
+
+.grid {
+  gap: 16px;
+}
+
+@media (min-width: 1100px) {
+  .hero,
+  .section,
+  .page-shell {
+    max-width: 1040px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 42px;
+    padding-bottom: 28px;
+  }
+
+  h1 {
+    font-size: clamp(42px, 14vw, 58px);
+  }
+
+  .subtitle,
+  .project-lead {
+    font-size: 17px;
+  }
+}
