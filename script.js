@@ -299,10 +299,17 @@ function setupPortfolioAssistant() {
     },
     who: {
       text: "Johnny Dao is a Cloud / Python Automation Engineer with 10+ years of IT experience across AWS, automation, infrastructure reporting, CI/CD, endpoint support, and AI workflow experimentation.",
-      links: [{ label: "View Projects", href: homeProjects }]
+      links: [
+        { label: "View Résumé", href: root + "Johnny-Dao-Resume.pdf" },
+        { label: "View Projects", href: homeProjects }
+      ]
+    },
+    resume: {
+      text: "Johnny's résumé covers his cloud engineering, Python and PowerShell automation, AWS and Azure experience, selected projects, education, and certifications.",
+      links: [{ label: "Open Résumé PDF", href: root + "Johnny-Dao-Resume.pdf" }]
     },
     site: {
-      text: "This site is a sanitized public portfolio. It shows cloud automation, Python scripting, CI/CD, AWS reporting, and AI/LLM workflow demos without exposing employer names, private systems, account IDs, secrets, internal logs, or screenshots.",
+      text: "This public portfolio includes Johnny's résumé and sanitized cloud automation, Python scripting, CI/CD, AWS reporting, and AI/LLM workflow demos. The demos do not expose internal systems, account IDs, secrets, customer data, private logs, or screenshots.",
       links: [
         { label: "Recommended Path", href: homeProjects },
         { label: "View Projects", href: homeProjects }
@@ -387,7 +394,9 @@ function setupPortfolioAssistant() {
     if (q.includes("contact") || q.includes("email") || q.includes("reach")) return "contact";
     if (q.includes("ci") || q.includes("cd") || q.includes("github") || q.includes("deploy") || q.includes("pipeline")) return "cicd";
     if (q.includes("aws") || q.includes("cloud") || q.includes("terraform") || q.includes("cloudformation") || q.includes("inventory") || q.includes("security")) return "aws";
-    if (q.includes("knowledge") || q.includes("kb") || q.includes("docs") || q.includes("documentation") || q.includes("dev environment") || q.includes("coding template") || q.includes("who do i contact")) return "kb"; if (q.includes("ai") || q.includes("llm") || q.includes("cv") || q.includes("resume") || q.includes("extraction")) return "ai";
+    if (q.includes("knowledge") || q.includes("kb") || q.includes("docs") || q.includes("documentation") || q.includes("dev environment") || q.includes("coding template") || q.includes("who do i contact")) return "kb";
+    if (q.includes("resume") || q.includes("résumé") || q.includes("work history") || q.includes("employment")) return "resume";
+    if (q.includes("ai") || q.includes("llm") || q.includes("cv") || q.includes("extraction")) return "ai";
     if (q.includes("project") || q.includes("demo") || q.includes("case study")) return "projects";
     if (q.includes("site") || q.includes("portfolio") || q.includes("what does")) return "site";
     if (q.includes("johnny") || q.includes("who") || q.includes("experience")) return "who";
